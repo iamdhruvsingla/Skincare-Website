@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+                                
+  <title>SKINCARE Website</title>
+  <style>
+                
+    .uppermost {
+      margin-top: 0;
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    .top-area {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0; /* Updated: Reduced padding to zero */
+      background-color: #f5f5f5;
+      margin-top: 0; /* Updated: Set margin-top to zero */
+    }
+
+    .company-name {
+      font-size: 48px;
+      font-weight: bold;
+    }
+
+    .droplist {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .droplist li {
+      margin: 0 10px;
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center; /* Updated: Align buttons to the center */
+      align-items: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    .buttons button {
+      margin: 0 5px;
+      padding: 5px 10px;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .scrolling-text {
+      overflow: hidden;
+      white-space: nowrap;
+      padding: 0 10px; /* Updated: Reduced horizontal scrolling area by 10 pixels */
+      animation: marquee 15s linear infinite;
+    }
+
+    .photo-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px; /* Add margin to separate from buttons */
+    }
+
+    .photo {
+      margin: 0 20px;
+      max-width: 250px; /* Adjust as needed */
+      height: auto;
+    }
+
+    .background {
+      background-color: #eef5fb; /* Light blueish background color */
+      padding: 20px; /* Adjust padding as needed */
+    }
+    
+    @keyframes marquee {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .visible {
+      display: block;
+    }
+
+    .about-text {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    
+    .about-section {
+      background-color: #ffffe0; /* Light yellowish background color */
+      padding: 20px;
+      margin-top: 20px;
+    }
+    
+    .picks-section {
+      margin-top: 20px;
+    }
+    
+    .picks-heading {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .picks-section {
+      background-color: #fdd7e4; /* Light pinkish background color */
+      padding: 20px;
+      margin-top: 20px;
+    }
+
+    .lower-container {
+      display: flex;
+      justify-content: center; /* Align center */
+      background-color: #f9f9f9; /* Light grayish background color */
+      padding: 20px;
+    }
+
+    .lower-section {
+      flex-basis: 33.33%;
+      text-align: center; /* Center align text */
+    }
+
+    .lower-section h3 {
+      margin-bottom: 10px;
+    }
+
+    .lower-section ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .lower-section li {
+      margin-bottom: 5px;
+    }
+
+    .lower-section a {
+      color: #333; /* Link color */
+      text-decoration: none;
+    }
+
+    .bottom-buttons {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .bottom-buttons button {
+      margin: 0 5px;
+      padding: 5px 10px;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .button-spacing {
+      margin-right: 10px;
+    }
+
+    .external-link {
+      color: #333;
+    }
+
+    .shop-image {
+      width: 100%;
+    }
+
+    .bestsellers {
+      width:100%;
+    }
+  .customer-interaction {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .customer-interaction label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .customer-interaction input,
+  .customer-interaction textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    resize: vertical;
+  }
+
+  </style>
+</head>
+<body class="uppermost">
+  <div class="scrolling-text">
+    <p>Upto 30% discount as a signing bonus!</p>
+  </div>
+
+  <div class="top-area">
+    <div>
+      <ul class="droplist">
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="bestsellers.html">Best Sellers</a></li>
+        <li><a href="giftguide.html">Gift Guide</a></li>
+      </ul>
+    </div>
+
+    <h1 class="company-name"><a href="index.html">SKNNSHOP</a></h1>
+
+    <div>
+      <ul class="droplist">
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+        <li><a href="index.html">Home</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="buttons">
+    <button id="search-btn" onclick="toggleSearchBox()"><img src="search.png" alt="Search" height="14" width="14"></button>
+    <button><img src="love.png" alt="Search" height="14" width="14"></button>
+    <button><img src="user.png" alt="Search" height="14" width="14"></button>
+    <button><img src="shopping-bag.png" alt="Search" height="14" width="14"></button>
+  </div>
+
+  <div id="search-box" class="hidden">
+    <input type="text" id="search-input" placeholder="Search...">
+  </div>
+
+  <div class="contact-info">
+    <p>Phone: 9574865890</p>
+    <p>Email: youcantseeme@gmail.com</p>
+  </div>
+
+  <div class="customer-interaction">
+    <h3>Customer Interaction</h3>
+    <form action="submit.php" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required><br>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br>
+      
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea><br>
+      
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+
+  <div class="bottom-buttons">
+    <button class="button-spacing">Become a Member</button>
+    <button class="button-spacing">Subscribe</button>
+    <button>Find a Store</button>
+  </div>
+
+  <div class="lower-container">
+    <div class="lower-section">
+      <h3>Skincare</h3>
+      <ul>
+        <li><a href="#">Cleansers</a></li>
+        <li><a href="#">Toners</a></li>
+        <li><a href="#">Moisturizers</a></li>
+        <li><a href="#">Serums</a></li>
+      </ul>
+    </div>
+    <div class="lower-section">
+      <h3>Makeup</h3>
+      <ul>
+        <li><a href="#">Foundation</a></li>
+        <li><a href="#">Concealers</a></li>
+        <li><a href="#">Mascara</a></li>
+        <li><a href="#">Lipstick</a></li>
+      </ul>
+    </div>
+    <div class="lower-section">
+      <h3>Haircare</h3>
+      <ul>
+        <li><a href="#">Shampoo</a></li>
+        <li><a href="#">Conditioner</a></li>
+        <li><a href="#">Hair Oil</a></li>
+        <li><a href="#">Styling Products</a></li>
+      </ul>
+    </div>
+  </div>
+  </div>
+
+  <div class="bottom-buttons">
+    <a href="contactus.html" target="_blank" class="external-link">Contact Us</a>
+    <span class="button-spacing"></span>
+    <button><img src="instagram.png" alt="Instagram" height="14" width="14"></button>
+    <button><img src="facebook-app-symbol.png" alt="Facebook" height="14" width="14"></button>
+    <button><img src="youtube.png" alt="YouTube" height="14" width="14"></button>
+    <button><img src="pinterest.png" alt="Pinterest" height="14" width="14"></button>
+    <span class="button-spacing"></span>
+    <a href="aboutus.html" target="_blank" class="external-link">About Us</a>
+  </div>
+
+</body>
+</html>
